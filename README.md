@@ -2,6 +2,20 @@
 
 [DEPLOYED HERE](hyperplexed.vercel.app)
 
+Learning Next js stuff:
+
+---
+
+- "use client" directive ==> Next 13 feature
+- App Router
+  - Pages Router
+- Routing
+- Rendering
+- Data Fetching
+- Styling
+- Optimizing
+- Configuring
+
 ---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
