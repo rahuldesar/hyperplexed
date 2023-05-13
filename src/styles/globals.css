@@ -18,10 +18,27 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  25% {
+    scale: 1.25 1;
+  }
+  50% {
+    scale: 1 1.5;
+  }
+  50% {
+    scale: 1.25 1.25;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+.translate-middle {
+  translate: -50% -50%;
 }
