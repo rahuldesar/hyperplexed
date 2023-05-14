@@ -6,16 +6,17 @@ export default function Somepage() {
   const mouseCoordinates = useCursorCoordinates();
 
   const { clientX, clientY } = mouseCoordinates as { clientX: string; clientY: string };
-
-  if (clientX && blobRef.current) {
-    let blob = blobRef.current;
-    blob.animate(
-      {
-        left: `${clientX}px`,
-        top: `${clientY}px`,
-      },
-      { duration: 750, fill: "forwards" }
-    );
+  if (blobRef.current) {
+    if (clientX !== undefined && clientY !== undefined) {
+      let blob = blobRef.current;
+      blob.animate(
+        {
+          left: `${clientX}px`,
+          top: `${clientY}px`,
+        },
+        { duration: 750, fill: "forwards" }
+      );
+    }
   }
 
   return (
