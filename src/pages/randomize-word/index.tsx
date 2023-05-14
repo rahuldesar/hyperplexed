@@ -1,4 +1,4 @@
-export default function RandomizeWord() {
+export default function Randomizccccc() {
   const handleRandomizeWords = (e: any) => {
     let word: string = e.target.innerText;
 
@@ -25,7 +25,11 @@ export default function RandomizeWord() {
 
   return (
     <div className="flex min-h-screen items-center justify-center">
-      <h1 className="font-mono text-8xl text-white" onMouseOver={handleRandomizeWords} onClick={handleRandomizeWords}>
+      <h1
+        className="font-mono text-3xl text-white sm:text-8xl"
+        onMouseOver={handleRandomizeWords}
+        onClick={handleRandomizeWords}
+      >
         RAHULDESAR
       </h1>
     </div>
